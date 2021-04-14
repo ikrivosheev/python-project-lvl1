@@ -10,5 +10,8 @@ package-install:
 install:
 	poetry install
 
+lint:
+	poetry run flake8 brain_games
+
 brain-games:
 	poetry run brain-games
