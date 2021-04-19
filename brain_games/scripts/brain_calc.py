@@ -1,9 +1,9 @@
-from .. import games
 from .. import engine
+from ..games import calc
 
 
 def main():
-    engine.game('What is the result of the expression?', games.calc)
+    engine.game(calc.HEADER, calc.game_step)
 
 
 if __name__ == '__main__':

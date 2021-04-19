@@ -1,12 +1,9 @@
-from .. import games
 from .. import engine
+from ..games import progression
 
 
 def main():
-    engine.game(
-        'Find the greatest common divisor of given numbers.',
-        games.progression
-    )
+    engine.game(progression.HEADER, progression.game_step)
 
 
 if __name__ == '__main__':

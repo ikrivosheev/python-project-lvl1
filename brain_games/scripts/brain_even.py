@@ -1,12 +1,9 @@
-from .. import games
 from .. import engine
+from ..games import even
 
 
 def main():
-    engine.game(
-        'Answer "yes" if the number is even, otherwise answer "no".',
-        games.is_even,
-    )
+    engine.game(even.HEADER, even.game_step)
 
 
 if __name__ == '__main__':

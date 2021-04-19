@@ -1,12 +1,9 @@
-from .. import games
 from .. import engine
+from ..games import prime
 
 
 def main():
-    engine.game(
-        'Answer "yes" if given number is prime. Otherwise answer "no".',
-        games.prime
-    )
+    engine.game(prime.HEADER, prime.game_step)
 
 
 if __name__ == '__main__':

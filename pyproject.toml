@@ -1,8 +1,12 @@
 [tool.poetry]
-name = "hexlet-code"
+name = "brain-games"
 version = "0.1.0"
-description = ""
+description = "Brain games"
 authors = ["Ivan Krivosheev <py.krivosheev@gmail.com>"]
+repository = "https://github.com/ikrivosheev/python-project-lvl1"
+classifiers = [
+  "Topic :: Education"
+]
 packages = [
   { include = "brain_games" },
 ]

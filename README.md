@@ -1,6 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/ikrivosheev/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/ikrivosheev/python-project-lvl1/actions)
 [![Linter Status](https://github.com/ikrivosheev/python-project-lvl1/actions/workflows/lint.yml/badge.svg)](https://github.com/ikrivosheev/python-project-lvl1/actions/workflows/lint.yml)
+[![Maintainability](https://api.codeclimate.com/v1/badges/eb01d9a1de3140b6aee2/maintainability)](https://codeclimate.com/github/ikrivosheev/python-project-lvl1/maintainability)
 
 ## Install
 
