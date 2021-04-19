@@ -6,7 +6,7 @@ from .utils import is_prime
 
 def is_even(start_q: int = 0, end_q: int = 100):
     q = random.randint(start_q, end_q)
-    return str(q), 'yes' if (q % 2) == 0 else 'no'
+    return f'Question: {q}', 'yes' if (q % 2) == 0 else 'no'
 
 
 def calc(start: int = 0, end: int = 20):
@@ -17,7 +17,7 @@ def calc(start: int = 0, end: int = 20):
     }
     a = random.randint(start, end)
     b = random.randint(start, end)
-    op = random.choice(operations.keys())
+    op = random.choice(list(operations.keys()))
     expected_result = operations[op](a, b)
 
     return f'Question: {a} {op} {b}', str(expected_result)
