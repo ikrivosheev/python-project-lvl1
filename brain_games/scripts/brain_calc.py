@@ -1,9 +1,12 @@
+#!/usr/bin/env python3
+"""Brain Calc"""
 from .. import engine
-from ..games import calc
+from ..games import CALC_GAME
 
 
 def main():
-    engine.game(calc.HEADER, calc.game_step)
+    """Brain Calc game"""
+    engine.game(*CALC_GAME)
 
 
 if __name__ == '__main__':
