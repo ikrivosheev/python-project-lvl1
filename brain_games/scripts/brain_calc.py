@@ -1,11 +1,9 @@
-from .. import cli
 from .. import games
+from .. import engine
 
 
 def main():
-    print('Welcome to the Brain Games!')
-    user = cli.welcome_user()
-    games.calc(user)
+    engine.game('What is the result of the expression?', games.calc)
 
 
 if __name__ == '__main__':

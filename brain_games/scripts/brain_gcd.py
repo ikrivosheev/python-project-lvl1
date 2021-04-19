@@ -4,8 +4,8 @@ from .. import engine
 
 def main():
     engine.game(
-        'Answer "yes" if the number is even, otherwise answer "no".',
-        games.is_even,
+        'Find the greatest common divisor of given numbers.',
+        games.gcd
     )
 
 

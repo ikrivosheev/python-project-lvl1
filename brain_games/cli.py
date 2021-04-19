@@ -7,11 +7,7 @@ def welcome_user():
     return name.strip()
 
 
-def bool_question(q, yes_answer='yes', no_answer='no'):
-    answer = prompt.string(q)
-    if answer == yes_answer:
-        return True
-    elif answer == no_answer:
-        return False
-
-    raise ValueError
+def question(q: str):
+    print(q)
+    answer = prompt.string('Your answer: ')
+    return answer.strip()

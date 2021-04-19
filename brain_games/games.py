@@ -1,83 +1,61 @@
 import random
 
-import prompt
+from .utils import get_gcd
+from .utils import is_prime
 
-from .cli import bool_question
 
-
-def _is_even(start_q: int = 0, end_q: int = 100):
+def is_even(start_q: int = 0, end_q: int = 100):
     q = random.randint(start_q, end_q)
-
-    is_even = (q % 2) == 0
-    print('Question: ', q)
-    try:
-        answer = bool_question('Your answer: ')
-    except ValueError:
-        print('Inccorect answer')
-        return False
-
-    if answer and not is_even:
-        print('\'yes\' is wrong answer ;(. Correct answer was \'no\'.')
-        return False
-    elif not answer and is_even:
-        print('\'no\' is wrong answer ;(. Correct answer was \'yes\'')
-        return False
-
-    print('Correct!')
-    return True
+    return str(q), 'yes' if (q % 2) == 0 else 'no'
 
 
-def _calc(start: int = 0, end: int = 20):
+def calc(start: int = 0, end: int = 20):
+    operations = {
+        '+': lambda a, b: a + b,
+        '-': lambda a, b: a - b,
+        '*': lambda a, b: a * b
+    }
     a = random.randint(start, end)
     b = random.randint(start, end)
-    op = random.choice(['+', '-', '*'])
+    op = random.choice(operations.keys())
+    expected_result = operations[op](a, b)
 
-    if op == '+':
-        expected_result = a + b
-    elif op == '-':
-        expected_result = a - b
-    else:
-        expected_result = a * b
-
-    print(f'Question: {a} {op} {b}')
-    answer = prompt.integer(prompt='Your answer: ')
-
-    if answer != expected_result:
-        print(f'\'{answer}\' is wrong answer ;(. '
-              f'Correct answer was \' {expected_result}\'')
-        return False
-
-    print('Correct!')
-    return True
+    return f'Question: {a} {op} {b}', str(expected_result)
 
 
-def _loop(hello_str: str, one_step, attempts: int = 3) -> bool:
-    print(hello_str)
-
-    for i in range(attempts):
-        if not one_step():
-            return False
-
-    return True
+def gcd(start: int = 1, end: int = 30):
+    a = random.randint(start, end)
+    b = random.randint(start, end)
+    q = f'Question: {a} {b}'
+    return q, str(get_gcd(a, b))
 
 
-def is_even(user):
-    result = _loop(
-        'Answer "yes" if the number is even, otherwise answer "no".',
-        _is_even,
-    )
-    if result:
-        print(f'Congratulations, {user}!')
-    else:
-        print(f'Let\'s try again, {user}!')
+def progression(
+    start_size: int = 5,
+    end_size: int = 10,
+    start_step: int = 1,
+    end_step: int = 20,
+    start_first: int = 0,
+    end_first: int = 30,
+):
+    size = random.randint(start_size, end_size)
+    step = random.randint(start_step, end_step)
+    first = random.randint(start_first, end_first)
+    hidden_position = random.randint(0, size - 1)
+
+    elements = []
+    elem = first
+    for i in range(size):
+        if i == hidden_position:
+            elements.append('..')
+        else:
+            elements.append(str(elem))
+        elem += step
+
+    hidden_elem = first + hidden_position * step
+    return f'Question: {" ".join(elements)}', str(hidden_elem)
 
 
-def calc(user):
-    result = _loop(
-        'What is the result of the expression?',
-        _calc,
-    )
-    if result:
-        print(f'Congratulations, {user}!')
-    else:
-        print(f'Let\'s try again, {user}!')
+def prime(start: int = 1, end: int = 30):
+    value = random.randint(start, end)
+    return f'Question: {value}', 'yes' if is_prime(value) else 'no'
