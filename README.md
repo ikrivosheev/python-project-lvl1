@@ -17,7 +17,7 @@ make package-install
 
 ### Brain Calc
 
-[![asciinema](https://asciinema.org/a/10sDwXiOCM1EFXpe1qSRm4LAd.svg)](https://asciinema.org/a/10sDwXiOCM1EFXpe1qSRm4LAd)
+[![asciinema](https://asciinema.org/a/7ebEFA0vx8gyGQeWDj8VEtOI5.svg)](https://asciinema.org/a/7ebEFA0vx8gyGQeWDj8VEtOI5)
 
 ### Brain GCD
 
