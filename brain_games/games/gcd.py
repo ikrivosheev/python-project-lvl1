@@ -2,7 +2,7 @@ import random
 
 from ..utils import get_gcd
 
-HEADER = 'Find the greatest common divisor of given numbers.',
+HEADER = 'Find the greatest common divisor of given numbers.'
 
 
 def game_step(start: int = 1, end: int = 30):

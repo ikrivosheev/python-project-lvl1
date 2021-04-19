@@ -14,20 +14,20 @@ make package-install
 
 ### Brain even
 
-[![asciinema](https://asciinema.org/a/10sDwXiOCM1EFXpe1qSRm4LAd.svg)](https://asciinema.org/a/10sDwXiOCM1EFXpe1qSRm4LAd)
+[![asciinema](https://asciinema.org/a/z5B2NsuW0taCDhUgB5sZz8wP7.svg)](https://asciinema.org/a/z5B2NsuW0taCDhUgB5sZz8wP7)
 
 ### Brain Calc
 
-[![asciinema](https://asciinema.org/a/7ebEFA0vx8gyGQeWDj8VEtOI5.svg)](https://asciinema.org/a/7ebEFA0vx8gyGQeWDj8VEtOI5)
+[![asciinema](https://asciinema.org/a/gXAgLKZsjgPULTGNs0RiWA8l5.svg)](https://asciinema.org/a/gXAgLKZsjgPULTGNs0RiWA8l5)
 
 ### Brain GCD
 
-[![asciinema](https://asciinema.org/a/qhNPLUYeABzirJc46TPCHXnYI.svg)](https://asciinema.org/a/qhNPLUYeABzirJc46TPCHXnYI)
+[![asciinema](https://asciinema.org/a/cbTnmkFu1CX4jRNsLR96MBfja.svg)](https://asciinema.org/a/cbTnmkFu1CX4jRNsLR96MBfja)
 
 ### Brain Progression
 
-[![asciinema](https://asciinema.org/a/oruWPDa4R72PEuLoseniau6jT.svg)](https://asciinema.org/a/oruWPDa4R72PEuLoseniau6jT)
+[![asciinema](https://asciinema.org/a/K0mID1kSScxb05YlQstXr8xHd.svg)](https://asciinema.org/a/K0mID1kSScxb05YlQstXr8xHd)
 
 ### Brain Prime
 
-[![asciinema](https://asciinema.org/a/NQ7mLydb6plnHpZGnMv5hCOu7.svg)](https://asciinema.org/a/NQ7mLydb6plnHpZGnMv5hCOu7)
+[![asciinema](https://asciinema.org/a/6s0vtrLMdaHuq4QRSq646puN7.svg)](https://asciinema.org/a/6s0vtrLMdaHuq4QRSq646puN7)
