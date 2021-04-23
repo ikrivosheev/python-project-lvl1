@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Brain Progression"""
 from .. import engine
-from ..games import PROGRESSION_GAME
+from ..games import progression
 
 
 def main():
-    engine.game(*PROGRESSION_GAME)
+    engine.run(progression)
 
 
 if __name__ == '__main__':

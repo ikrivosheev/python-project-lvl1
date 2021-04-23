@@ -1,11 +1,10 @@
 import random
 import typing as t
 
-
 HEADER = 'Find the greatest common divisor of given numbers.'
 
 
-def game_step(
+def play(
     size_range: t.Tuple[int, int] = (5, 10),
     step_range: t.Tuple[int, int] = (1, 20),
     first_range: t.Tuple[int, int] = (0, 30),
@@ -25,4 +24,4 @@ def game_step(
         elem += step
 
     hidden_elem = first + hidden_position * step
-    return f'Question: {" ".join(elements)}', str(hidden_elem)
+    return f'{" ".join(elements)}', str(hidden_elem)

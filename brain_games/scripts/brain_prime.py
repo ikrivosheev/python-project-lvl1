@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Brain Prime"""
 from .. import engine
-from ..games import PRIME_GAME
+from ..games import prime
 
 
 def main():
-    engine.game(*PRIME_GAME)
+    engine.run(prime)
 
 
 if __name__ == '__main__':

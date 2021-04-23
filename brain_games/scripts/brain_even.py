@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Brain Even"""
 from .. import engine
-from ..games import EVEN_GAME
+from ..games import even
 
 
 def main():
-    engine.game(*EVEN_GAME)
+    engine.run(even)
 
 
 if __name__ == '__main__':

@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Brain GCD"""
 from .. import engine
-from ..games import GCD_GAME
+from ..games import gcd
 
 
 def main():
-    engine.game(*GCD_GAME)
+    engine.run(gcd)
 
 
 if __name__ == '__main__':
