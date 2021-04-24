@@ -5,7 +5,7 @@ from .cli import welcome_user
 def _loop(play, attempts: int = 3, **kwargs) -> bool:
     for i in range(attempts):
         q, correct_answer = play(**kwargs)
-        answer = question(f'Question: {q}')
+        answer = question(f'Question: {q}', 'Your answer: ')
         if answer != correct_answer:
             print(f'\'{answer}\' is wrong answer ;(. '
                   f'Correct answer was \'{correct_answer}\'.')

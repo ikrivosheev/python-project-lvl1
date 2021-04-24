@@ -7,7 +7,7 @@ def welcome_user():
     return name.strip()
 
 
-def question(q: str):
+def question(q: str, q_prompt: str):
     print(q)
-    answer = prompt.string('Your answer: ')
+    answer = prompt.string(q_prompt)
     return answer.strip()
