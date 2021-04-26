@@ -4,7 +4,7 @@ import typing as t
 HEADER = 'Find the greatest common divisor of given numbers.'
 
 
-def play(
+def prepare_round_data(
     size_range: t.Tuple[int, int] = (5, 10),
     step_range: t.Tuple[int, int] = (1, 20),
     first_range: t.Tuple[int, int] = (0, 30),
@@ -24,4 +24,4 @@ def play(
         elem += step
 
     hidden_elem = first + hidden_position * step
-    return f'{" ".join(elements)}', str(hidden_elem)
+    return f'{" ".join(elements)}', f'{hidden_elem}'

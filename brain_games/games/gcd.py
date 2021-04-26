@@ -12,8 +12,8 @@ def get_gcd(a: int, b: int):
     return a + b
 
 
-def play(start: int = 1, end: int = 30):
+def prepare_round_data(start: int = 1, end: int = 30):
     a = random.randint(start, end)
     b = random.randint(start, end)
     gcd = get_gcd(a, b)
-    return f'{a} {b}', str(gcd)
+    return f'{a} {b}', f'{gcd}'

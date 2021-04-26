@@ -15,6 +15,7 @@ def is_prime(number: int) -> bool:
     return divider_square > number
 
 
-def play(start: int = 1, end: int = 30):
+def prepare_round_data(start: int = 1, end: int = 30):
     value = random.randint(start, end)
-    return f'{value}', 'yes' if is_prime(value) else 'no'
+    correct_answer = 'yes' if is_prime(value) else 'no'
+    return f'{value}', correct_answer

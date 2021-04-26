@@ -1,11 +1,11 @@
-from .cli import question
+from .cli import request_user
 from .cli import welcome_user
 
 
-def _loop(play, attempts: int = 3, **kwargs) -> bool:
+def _loop(prepare_round_data, attempts: int = 3, **kwargs) -> bool:
     for i in range(attempts):
-        q, correct_answer = play(**kwargs)
-        answer = question(f'Question: {q}', 'Your answer: ')
+        question, correct_answer = prepare_round_data(**kwargs)
+        answer = request_user(f'Question: {question}', 'Your answer: ')
         if answer != correct_answer:
             print(f'\'{answer}\' is wrong answer ;(. '
                   f'Correct answer was \'{correct_answer}\'.')
@@ -19,7 +19,7 @@ def run(game, attempts: int = 3, **kwargs):
     user = welcome_user()
 
     print(game.HEADER)
-    if _loop(game.play, attempts, **kwargs):
+    if _loop(game.prepare_round_data, attempts, **kwargs):
         print(f'Congratulations, {user}!')
     else:
         print(f'Let\'s try again, {user}!')
