@@ -14,14 +14,14 @@ def prepare_round_data(
     first = random.randint(*first_range)
     hidden_position = random.randint(0, size - 1)
 
-    elements = []
+    question = []
     elem = first
     for i in range(size):
         if i == hidden_position:
-            elements.append('..')
+            question.append('..')
         else:
-            elements.append(str(elem))
+            question.append(str(elem))
         elem += step
 
     hidden_elem = first + hidden_position * step
-    return f'{" ".join(elements)}', f'{hidden_elem}'
+    return f'{" ".join(question)}', f'{hidden_elem}'
